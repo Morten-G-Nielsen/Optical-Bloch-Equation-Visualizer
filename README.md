@@ -26,6 +26,8 @@ A real time simulation of the optical Bloch equation in C++ using OpenGL.
 
 ## Build (Linux)
 git clone https://github.com/Morten-G-Nielsen/Optical-Bloch-Equation-Visualizer.git
+
 cd project
+
 make
 

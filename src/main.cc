@@ -43,6 +43,7 @@ struct Bloc{
     p.t_center = 1;
     p.A = PI/2;
     p.w = 0.01;
+    p.beta = 0.5;
     R.x = 0; R.y = 0; R.z = -1.0;
     set_gauss();
   }
@@ -121,7 +122,7 @@ int main(){
 
   // Compiling shaders and linking
   std::string vStr = hfuns::loadFile("shaders/v.vert");
-  std::string fStr = hfuns::loadFile("shaders/fragment.frag");
+  std::string fStr = hfuns::loadFile("shaders/f.frag");
   const char* vSrc = vStr.c_str();
   const char* fSrc = fStr.c_str();
   GLuint renderprogram = hfuns::createGraphicsProgram(vSrc, fSrc);
